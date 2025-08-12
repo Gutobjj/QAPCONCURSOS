@@ -143,3 +143,76 @@ body:before{
   background: #0b0b0b;
   color: #fff;
 }
+
+/* ===== BRUTE FORCE nos selects do Diagnóstico ===== */
+
+/* Mude aqui: RED (vermelho) ou BLACK (preto) */
+:root {
+  --sel-bg: #991b1b;      /* fundo */
+  --sel-border: #D7263D;  /* borda */
+  --sel-text: #ffffff;    /* texto */
+}
+/* Se quiser PRETO, troque por:
+:root {
+  --sel-bg: #111111;
+  --sel-border: rgba(255,255,255,.22);
+  --sel-text: #ffffff;
+}
+*/
+
+.select-wrap { position: relative; }
+.select-wrap:after {
+  content: "\f078"; /* chevron down */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255,255,255,.7);
+}
+
+/* Campo select (forçando tudo) */
+select[name="cargo"],
+select[name="banca"],
+select[name="estado"] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+
+  background-color: var(--sel-bg) !important;
+  color: var(--sel-text) !important;
+  -webkit-text-fill-color: var(--sel-text) !important; /* Safari/iOS */
+  border: 1px solid var(--sel-border) !important;
+  border-radius: 12px !important;
+  padding: .75rem .875rem !important;
+  padding-right: 2.25rem !important; /* espaço pro ícone */
+  outline: none !important;
+  color-scheme: dark !important;
+  caret-color: var(--sel-text) !important;
+}
+
+/* Menu de opções (quando o navegador permite) */
+select[name="cargo"] option,
+select[name="banca"] option,
+select[name="estado"] option,
+select[name="cargo"] optgroup,
+select[name="banca"] optgroup,
+select[name="estado"] optgroup {
+  background: #0b0b0b !important;  /* deixe #111 pra preto total */
+  color: #ffffff !important;
+}
+
+/* Esconde setinha do IE/Edge legado */
+select::-ms-expand { display: none; }
+
+/* iOS ajustes extra */
+@supports (-webkit-touch-callout: none) {
+  select[name="cargo"],
+  select[name="banca"],
+  select[name="estado"] {
+    background-image: none !important;
+  }
+}
+
