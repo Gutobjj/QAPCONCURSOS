@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -284,45 +284,35 @@
       <div class="space-y-5">
         <div data-step>
           <label class="block text-sm mb-2">Seu nome</label>
-          <input name="nome" class="w-full rounded-lg bg-red-600/10 border border-red-600/40 text-white
-         px-3 py-3 outline-none focus:ring-2 focus:ring-red-600/50 focus:border-red-600">
+          <input name="nome" class="w-full rounded-lg bg-black border border-black px-3 py-3 outline-none" placeholder="Seu nome" />
         </div>
-        <!-- CARGO (vermelho) -->
-      <div class="relative">
-        <select name="cargo" class="select-wrap">
-          <option>Polícia Civil</option>
-          <option>Polícia Militar</option>
-          <option>PRF</option>
-          <option>PF</option>
-          <option>Guarda Municipal</option>
-        </select>
-        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-white/70"></i>
-      </div>
-      
-      <!-- BANCA (vermelho) -->
-      <div class="relative">
-        <select name="banca" class="select-wrap">
-          <option>Cebraspe</option>
-          <option>FGV</option>
-          <option>Vunesp</option>
-          <option>Outra</option>
-        </select>
-        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-white/70"></i>
-      </div>
-      
-      <!-- ESTADO (vermelho) -->
-      <div class="relative">
-        <select name="estado" class="select-wrap">
-          <option>AL</option><option>BA</option><option>CE</option><option>DF</option>
-          <option>ES</option><option>GO</option><option>MA</option><option>MG</option>
-          <option>PA</option><option>PB</option><option>PE</option><option>PI</option>
-          <option>PR</option><option>RJ</option><option>RN</option><option>RO</option>
-          <option>RR</option><option>RS</option><option>SC</option><option>SE</option>
-          <option>SP</option><option>TO</option>
-        </select>
-        <i class="fa-solid fa-chevron-down pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-white/70"></i>
-      </div>
-
+        <div data-step class="hidden">
+          <label class="block text-sm mb-2">Qual cargo você busca?</label>
+          <select name="cargo" class="w-full rounded-lg bg-black border border-black px-3 py-3 outline-none">
+            <option>Polícia Civil</option>
+            <option>Polícia Militar</option>
+            <option>PRF</option>
+            <option>PF</option>
+            <option>Guarda Municipal</option>
+          </select>
+        </div>
+        <div data-step class="hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm mb-2">Banca</label>
+              <select name="banca" class="w-full rounded-lg bg-blackborder border-black px-3 py-3 outline-none">
+                <option>Cebraspe</option>
+                <option>FGV</option>
+                <option>Vunesp</option>
+                <option>Outra</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm mb-2">Estado</label>
+              <select name="estado" class="w-full rounded-lg bg-black border border-black px-3 py-3 outline-none">
+                <option>AL</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MG</option><option>PA</option><option>PB</option><option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option><option>SP</option><option>TO</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
