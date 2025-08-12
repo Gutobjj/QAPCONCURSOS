@@ -106,3 +106,40 @@ body:before{
 .modal-panel{ position:relative; width:100%; max-width:560px; }
 .step-dot{ width:10px;height:10px;border-radius:999px; background:#444; }
 .step-dot.active{ background:var(--qap-red); }
+
+/* Selects do Diagnóstico */
+.select-qap{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #fff;
+  border-radius: 12px;
+  padding: .75rem .875rem;
+  padding-right: 2.5rem; /* espaço p/ ícone */
+  outline: none;
+  color-scheme: dark; /* melhora em alguns browsers */
+}
+
+.select-qap--red{
+  background-color: #991b1b !important;   /* vermelho escuro sólido */
+  border: 1px solid #D7263D !important;   /* vermelho da marca */
+}
+.select-qap--red:focus{
+  box-shadow: 0 0 0 2px rgba(215,38,61,.45);
+  border-color: #D7263D;
+}
+
+.select-qap--black{
+  background-color: rgba(0,0,0,.6) !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+}
+.select-qap--black:focus{
+  box-shadow: 0 0 0 2px rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.35);
+}
+
+/* cor do menu de opções (alguns navegadores respeitam) */
+.select-qap option{
+  background: #0b0b0b;
+  color: #fff;
+}
