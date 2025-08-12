@@ -1,0 +1,108 @@
+/* QAP Concursos — styles.css (v2) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+* { font-family: 'Inter', sans-serif; }
+
+:root{
+  --qap-red:#D7263D;
+  --qap-black:#0b0b0b;
+  --qap-gray:#151517;
+  --qap-ink:#0f1115;
+}
+
+body.gradient-premium {
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(215,38,61,0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(255,255,255,0.06), transparent 60%),
+    radial-gradient(1000px 600px at 80% 90%, rgba(215,38,61,0.14), transparent 55%),
+    linear-gradient(180deg, #0a0a0a 0%, #0f0f10 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* subtle noise */
+body:before{
+  content:"";
+  position:fixed; inset:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncA type='table' tableValues='0 0 0 .04 .06 .07 .05 0'/></feComponentTransfer></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity:.35; pointer-events:none; mix-blend-mode:soft-light;
+}
+
+/* glass & cards */
+.glass {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.card-pro {
+  background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  will-change: transform;
+}
+.card-pro:hover{
+  transform: translateY(-6px);
+  border-color: rgba(215,38,61,.45);
+  box-shadow: 0 30px 60px rgba(215,38,61,.12);
+}
+
+.badge {
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.4rem .75rem; border-radius:999px;
+  background: rgba(215,38,61,.1);
+  border: 1px solid rgba(215,38,61,.4);
+  color: var(--qap-red);
+  font-weight:600; letter-spacing:.3px;
+}
+
+/* animated glow rings */
+.ring{
+  position:absolute; border-radius:50%;
+  filter: blur(40px); opacity:.28; pointer-events:none;
+}
+.ring.r1{ width:380px;height:380px; background:#D7263D; top:-60px; left:-60px; animation:float 7s ease-in-out infinite; }
+.ring.r2{ width:320px;height:320px; background:#9c1b2a; bottom:10%; right:10%; animation:float 9s ease-in-out infinite reverse; }
+
+@keyframes float{ 0%,100%{ transform:translateY(0)} 50%{ transform:translateY(-10px)} }
+
+/* hero heading shadow */
+.title-shadow{ text-shadow: 0 10px 30px rgba(215,38,61,.25); }
+
+/* CTA sticky bottom (mobile) */
+.cta-sticky{
+  position:sticky; bottom:0; z-index:40;
+  background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.7) 20%, rgba(0,0,0,.85));
+  padding: 12px 0;
+  backdrop-filter: blur(6px);
+}
+
+/* FAQ accordion */
+.faq-item{ border-bottom:1px solid rgba(255,255,255,.08); }
+.faq-q{ display:flex; justify-content:space-between; align-items:center; padding:16px 0; cursor:pointer; }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .35s ease; color:#d1d5db; }
+.faq-item.active .faq-a{ max-height:320px; }
+
+/* Slider */
+.slider{ position:relative; overflow:hidden; }
+.slider-track{ display:flex; transition: transform .5s ease; }
+.slide{ min-width:100%; }
+
+/* Buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
+  padding:.9rem 1.2rem; border-radius:12px; font-weight:700;
+}
+.btn-primary{ background:var(--qap-red); color:#fff; }
+.btn-primary:hover{ filter:brightness(1.05); }
+.btn-ghost{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); }
+.btn-ghost:hover{ background:rgba(255,255,255,.1); }
+
+/* Modal */
+.modal{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; z-index:50; }
+.modal.open{ display:flex; }
+.modal-backdrop{ position:absolute; inset:0; background:rgba(0,0,0,.7); backdrop-filter:blur(4px); }
+.modal-panel{ position:relative; width:100%; max-width:560px; }
+.step-dot{ width:10px;height:10px;border-radius:999px; background:#444; }
+.step-dot.active{ background:var(--qap-red); }

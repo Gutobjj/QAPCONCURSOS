@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QAP Concursos — Especialistas em Concursos da Área Policial</title>
+  <meta name="description" content="Materiais e simulados de alto desempenho para PF, PRF, PC e PM. Método tático: lei seca, questões e revisão 24-7-30. Fale com especialistas no WhatsApp." />
+  <meta name="theme-color" content="#000000" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta property="og:title" content="QAP Concursos — Sua aprovação é nossa missão" />
+  <meta property="og:description" content="PDFs completos, simulados táticos e atendimento direto com especialistas." />
+  <meta property="og:image" content="assets/img/og-banner.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/img/logo-192.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .container{max-width:1100px}
+  </style>
+</head>
+<body class="gradient-premium">
+  <!-- NAV -->
+  <nav class="sticky top-0 z-40 backdrop-blur bg-black/40 border-b border-white/10">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/img/logo-32.png" onerror="this.src='assets/img/logo-192.png'" alt="QAP Concursos" class="w-10 h-10 rounded-full bg-black object-contain"/>
+        <span class="font-extrabold tracking-wide">QAP <span class="text-[var(--qap-red)]">CONCURSOS</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#materiais" class="hover:text-[var(--qap-red)]">Materiais</a>
+        <a href="#metodo" class="hover:text-[var(--qap-red)]">Método</a>
+        <a href="#depoimentos" class="hover:text-[var(--qap-red)]">Depoimentos</a>
+        <a href="#faq" class="hover:text-[var(--qap-red)]">FAQ</a>
+        <button data-open-quiz class="btn btn-primary">Diagnóstico Tático</button>
+      </div>
+      <button data-whats class="md:hidden btn btn-primary">WhatsApp</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden">
+    <div class="ring r1"></div><div class="ring r2"></div>
+    <div class="container mx-auto px-6 py-16 md:py-24 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="badge mb-4"><i class="fa-solid fa-user-shield"></i> Especialistas em área policial</span>
+          <h1 class="title-shadow text-4xl md:text-6xl font-extrabold leading-tight">
+            Do edital ao distintivo: <span class="text-[var(--qap-red)]">treino tático</span> que acelera sua aprovação
+          </h1>
+          <p class="mt-5 text-lg text-gray-300 max-w-xl">
+            PDF cirúrgico, questões comentadas e simulados com padrão de banca. Atendimento direto no WhatsApp e plano de estudo sob medida.
+          </p>
+          <div class="mt-7 flex flex-col sm:flex-row gap-4">
+            <button data-whats class="btn btn-primary"><i class="fab fa-whatsapp"></i> Falar com um especialista</button>
+            <a href="#materiais" class="btn btn-ghost">Ver materiais</a>
+          </div>
+          <div class="mt-6 flex items-center gap-6 text-sm text-gray-400">
+            <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-[var(--qap-red)]"></i> Foco PF | PRF | PC | PM</div>
+            <div class="flex items-center gap-2"><i class="fa-solid fa-clipboard-check text-[var(--qap-red)]"></i> Banca Cebraspe | FGV | Vunesp</div>
+          </div>
+        </div>
+        <div class="glass p-6 md:p-8 rounded-2xl">
+          <img src="assets/img/logo-1024.png" alt="Mascote QAP Concursos — caveira com boina vermelha" class="w-full max-w-md mx-auto object-contain"/>
+        </div>
+      </div>
+    </div>
+    <div class="cta-sticky md:hidden">
+      <div class="container mx-auto px-6">
+        <button data-whats class="btn btn-primary w-full"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BARRA DE PROVAS/SELOS -->
+  <section class="py-10">
+    <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="glass py-4 rounded-lg" data-reveal><i class="fa-solid fa-book text-[var(--qap-red)] mr-2"></i> Lei seca objetiva</div>
+      <div class="glass py-4 rounded-lg" data-reveal><i class="fa-solid fa-bullseye text-[var(--qap-red)] mr-2"></i> Questões por banca</div>
+      <div class="glass py-4 rounded-lg" data-reveal><i class="fa-solid fa-clock text-[var(--qap-red)] mr-2"></i> Simulados cronometrados</div>
+      <div class="glass py-4 rounded-lg" data-reveal><i class="fa-solid fa-user-check text-[var(--qap-red)] mr-2"></i> Suporte direto</div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS -->
+  <section id="materiais" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-3xl md:text-5xl font-extrabold">Materiais de <span class="text-[var(--qap-red)]">alto desempenho</span></h2>
+        <p class="text-gray-300 mt-3">Tudo que você precisa para a área policial, em um só lugar.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="card-pro p-7" data-reveal>
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">PDFs Cirúrgicos</h3>
+            <i class="fa-solid fa-file-pdf text-2xl text-[var(--qap-red)]"></i>
+          </div>
+          <p class="text-gray-300">Conteúdo direto ao ponto com lei seca, esquemas e pegadinhas de banca.</p>
+          <ul class="mt-4 space-y-2 text-gray-400 text-sm list-disc list-inside">
+            <li>Atualizado</li><li>Objetivo</li><li>Aplicável em questões</li>
+          </ul>
+          <div class="mt-6"><button data-whats class="btn btn-primary w-full">Quero esse material</button></div>
+        </article>
+
+        <article class="card-pro p-7" data-reveal>
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">Simulados Táticos</h3>
+            <i class="fa-solid fa-stopwatch text-2xl text-[var(--qap-red)]"></i>
+          </div>
+          <p class="text-gray-300">Simulados cronometrados por banca, com espelho de desempenho.</p>
+          <ul class="mt-4 space-y-2 text-gray-400 text-sm list-disc list-inside">
+            <li>Padrão Cebraspe/FGV/Vunesp</li><li>Feedback</li><li>Revisão 24-7-30</li>
+          </ul>
+          <div class="mt-6"><button data-whats class="btn btn-primary w-full">Quero treinar</button></div>
+        </article>
+
+        <article class="card-pro p-7" data-reveal>
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-2xl font-bold">Mentoria Tática</h3>
+            <i class="fa-solid fa-user-tie text-2xl text-[var(--qap-red)]"></i>
+          </div>
+          <p class="text-gray-300">Diagnóstico rápido + plano de estudo personalizado e acompanhamento.</p>
+          <ul class="mt-4 space-y-2 text-gray-400 text-sm list-disc list-inside">
+            <li>Ritmo e revisões</li><li>Direcionamento por cargo</li><li>Suporte direto</li>
+          </ul>
+          <div class="mt-6"><button data-open-quiz class="btn btn-ghost w-full">Fazer diagnóstico</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTODO -->
+  <section id="metodo" class="py-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div data-reveal>
+        <span class="badge mb-3"><i class="fa-solid fa-diagram-project"></i> Método</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold">3 pilares para acertar <span class="text-[var(--qap-red)]">mais questões</span></h2>
+        <ul class="mt-6 space-y-5 text-gray-300">
+          <li><b>Lei Seca Cirúrgica:</b> o que realmente cai, com mapas e mnemônicos.</li>
+          <li><b>Questões por Banca:</b> treino focado em Cebraspe/FGV/Vunesp.</li>
+          <li><b>Revisão 24-7-30:</b> retenção e acerto em simulados.</li>
+        </ul>
+        <div class="mt-7"><button data-open-quiz class="btn btn-primary">Montar meu plano</button></div>
+      </div>
+      <div class="glass p-6 rounded-2xl" data-reveal>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div class="p-6 bg-white/5 rounded-xl">
+            <i class="fa-solid fa-scale-balanced text-[var(--qap-red)] text-2xl"></i>
+            <p class="mt-2 text-sm text-gray-300">Direito Penal</p>
+          </div>
+          <div class="p-6 bg-white/5 rounded-xl">
+            <i class="fa-solid fa-gavel text-[var(--qap-red)] text-2xl"></i>
+            <p class="mt-2 text-sm text-gray-300">Processo Penal</p>
+          </div>
+          <div class="p-6 bg-white/5 rounded-xl">
+            <i class="fa-solid fa-shield-halved text-[var(--qap-red)] text-2xl"></i>
+            <p class="mt-2 text-sm text-gray-300">Leis Especiais</p>
+          </div>
+          <div class="p-6 bg-white/5 rounded-xl">
+            <i class="fa-solid fa-scale-unbalanced-flip text-[var(--qap-red)] text-2xl"></i>
+            <p class="mt-2 text-sm text-gray-300">Adm. Pública</p>
+          </div>
+          <div class="p-6 bg-white/5 rounded-xl">
+            <i class="fa-solid fa-id-card-clip text-[var(--qap-red)] text-2xl"></i>
+            <p class="mt-2 text-sm text-gray-300">Ética/Legislação</p>
+          </div>
+          <div class="p-6 bg-white/5 rounded-xl">
+            <i class="fa-solid fa-brain text-[var(--qap-red)] text-2xl"></i>
+            <p class="mt-2 text-sm text-gray-300">RLM & Português</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (slider) -->
+  <section id="depoimentos" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-3xl md:text-5xl font-extrabold">O que a tropa <span class="text-[var(--qap-red)]">fala</span></h2>
+        <p class="text-gray-300">Feedback real de alunos em preparação.</p>
+      </div>
+      <div class="slider glass rounded-2xl p-6">
+        <div class="slider-track">
+          <div class="slide">
+            <blockquote class="md:grid md:grid-cols-[80px_1fr] gap-6 items-center">
+              <div class="w-16 h-16 rounded-full bg-[var(--qap-red)] grid place-items-center font-extrabold">M</div>
+              <div>
+                <div class="flex items-center gap-1 text-yellow-400 mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-lg text-gray-200">“PDF direto ao ponto + simulados com cara de prova. Subi muito meu acerto.”</p>
+                <cite class="text-gray-400 text-sm">Marcos — Preparação PM</cite>
+              </div>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <blockquote class="md:grid md:grid-cols-[80px_1fr] gap-6 items-center">
+              <div class="w-16 h-16 rounded-full bg-[var(--qap-red)] grid place-items-center font-extrabold">A</div>
+              <div>
+                <div class="flex items-center gap-1 text-yellow-400 mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-lg text-gray-200">“Atendimento rápido no WhatsApp e direcionamento por banca. Me salvou.”</p>
+                <cite class="text-gray-400 text-sm">Ana — Foco PC</cite>
+              </div>
+            </blockquote>
+          </div>
+          <div class="slide">
+            <blockquote class="md:grid md:grid-cols-[80px_1fr] gap-6 items-center">
+              <div class="w-16 h-16 rounded-full bg-[var(--qap-red)] grid place-items-center font-extrabold">R</div>
+              <div>
+                <div class="flex items-center gap-1 text-yellow-400 mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="text-lg text-gray-200">“Material bem organizado. Revisão 24-7-30 fez diferença no simulado.”</p>
+                <cite class="text-gray-400 text-sm">Roberto — Guarda Municipal</cite>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="flex justify-between mt-6">
+          <button class="btn btn-ghost" data-prev aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="btn btn-ghost" data-next aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Perguntas <span class="text-[var(--qap-red)]">frequentes</span></h2>
+      <div class="faq-item">
+        <div class="faq-q"><span>Como funcionam os materiais?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a pb-4">PDFs de lei seca e teoria objetiva, questões comentadas e simulados por banca. Indicamos o pacote conforme seu cargo.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Vocês atendem todas as bancas?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a pb-4">Trabalhamos principalmente com Cebraspe, FGV e Vunesp. Para outras, avaliamos o edital e direcionamos o treino.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Tem suporte pelo WhatsApp?</span><i class="fa-solid fa-plus"></i></div>
+        <div class="faq-a pb-4">Sim. Fale direto com um especialista clicando em qualquer botão do WhatsApp nesta página.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="glass p-8 rounded-2xl text-center">
+        <h3 class="text-3xl font-extrabold mb-3">Pronto para a missão?</h3>
+        <p class="text-gray-300 mb-6">Clique para falar com a equipe ou faça o diagnóstico e receba um plano.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button data-whats class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp agora</button>
+          <button data-open-quiz class="btn btn-ghost">Fazer diagnóstico</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-12 bg-black/40">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex items-center justify-center mb-5 gap-3">
+        <img src="assets/img/logo-192.png" alt="QAP Concursos" class="w-10 h-10 rounded-full bg-black object-contain"/>
+        <span class="text-xl font-bold">QAP Concursos</span>
+      </div>
+      <p class="text-gray-400 mb-5">Sua aprovação é nossa missão. Materiais de qualidade para concursos da área policial.</p>
+      <p class="text-gray-500 text-sm">© <span data-year></span> QAP Concursos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL QUIZ -->
+  <div id="quiz-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel glass p-6 rounded-2xl mx-6">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="font-extrabold text-xl">Diagnóstico Tático</h4>
+        <button class="btn btn-ghost px-3 py-2" data-close><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p class="text-gray-300 mb-4">3 passos rápidos para te direcionar ao material ideal.</p>
+      <div class="flex items-center gap-2 mb-4">
+        <div class="step-dot"></div><div class="step-dot"></div><div class="step-dot"></div>
+      </div>
+
+      <div class="space-y-5">
+        <div data-step>
+          <label class="block text-sm mb-2">Seu nome</label>
+          <input name="nome" class="w-full rounded-lg bg-white/5 border border-white/10 px-3 py-3 outline-none" placeholder="Seu nome" />
+        </div>
+        <div data-step class="hidden">
+          <label class="block text-sm mb-2">Qual cargo você busca?</label>
+          <select name="cargo" class="w-full rounded-lg bg-white/5 border border-white/10 px-3 py-3 outline-none">
+            <option>Polícia Civil</option>
+            <option>Polícia Militar</option>
+            <option>PRF</option>
+            <option>PF</option>
+            <option>Guarda Municipal</option>
+          </select>
+        </div>
+        <div data-step class="hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm mb-2">Banca</label>
+              <select name="banca" class="w-full rounded-lg bg-white/5 border border-white/10 px-3 py-3 outline-none">
+                <option>Cebraspe</option>
+                <option>FGV</option>
+                <option>Vunesp</option>
+                <option>Outra</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm mb-2">Estado</label>
+              <select name="estado" class="w-full rounded-lg bg-white/5 border border-white/10 px-3 py-3 outline-none">
+                <option>AL</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MG</option><option>PA</option><option>PB</option><option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option><option>SP</option><option>TO</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-6">
+        <button data-prev class="btn btn-ghost hidden">Voltar</button>
+        <button data-next class="btn btn-primary ml-auto">Próximo</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
