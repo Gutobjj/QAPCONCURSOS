@@ -56,7 +56,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
 document.querySelectorAll('[data-whats]').forEach(btn => {
   btn.addEventListener('click', () => {
     const msg = encodeURIComponent('Olá! Quero conhecer os materiais da QAP Concursos. Pode me orientar?');
-    const numbers = ['5579976701963','5579999557460'];
+    const numbers = ['5579996701863','5579999557460'];
     const pick = numbers[Math.floor(Math.random()*numbers.length)];
     window.open(`https://wa.me/${pick}?text=${msg}`, '_blank');
   });
@@ -94,7 +94,7 @@ document.querySelectorAll('[data-whats]').forEach(btn => {
     const msg = encodeURIComponent(
       `Olá! Sou ${nome}. Estou focado(a) em ${cargo} / ${estado}, banca ${banca}. Quero indicação dos melhores materiais (PDFs e Simulados) da QAP.`
     );
-    const numbers = ['5579976701963','5579999557460'];
+    const numbers = ['5579996701863','5579999557460'];
     const pick = numbers[Math.floor(Math.random()*numbers.length)];
     window.open(`https://wa.me/${pick}?text=${msg}`, '_blank');
     modal.classList.remove('open');
